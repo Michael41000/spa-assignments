@@ -1,0 +1,66 @@
+.container {
+    margin: 0;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex-grow: 1;
+    background-color: pink;
+    font-size: large;
+}
+
+.body {
+    display: flex;
+    flex-direction: row;
+    align-self: stretch;
+    flex-grow: 13;
+}
+
+.left {
+    flex-grow: 1;
+    background-color: red;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    background-color: green;
+    width: 960px;
+}
+
+.button {
+    align-self: center;
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 0px;
+    font-size: medium;
+}
+
+.right {
+    flex-grow: 1;
+    background-color: blue;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: grey;
+    height: 6.66666vh;
+    font-size: small;
+    flex-grow: 1;
+}
+
