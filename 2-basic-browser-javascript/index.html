@@ -4,23 +4,36 @@
     <meta charset="utf-8">
     <title>the holy grail</title>
     <link rel="stylesheet" href="./styles.css">
-    <script src="./main.js"></script>
+    
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+
+    <script src="./scripts/main.js"></script>
   </head>
   <body class="container">
     <div class="app">
       <div class="header">
-        Total: 0
+        <button id="resetButton">Reset</button>
+        <span id="totalText">Total: 0</span>
+        <button id="saveButton">Save</button>
       </div>
       <div class="body">
-        <div class="left"></div>
-        <div class="center">
-          <input type="button" value="+1" class="button"></input>
+        <div class="left">
+          <label class="label">Cost: 10 points</label> 
+          <button id="multiplyButton" class="button">*1.2</button>
         </div>
-        <div class="right"></div>
+        <div class="center">
+          <button id="addButton" class="button">+1</button>
+        </div>
+        <div class="right">
+          <label id="numAutoClickers" class="label">AutoClickers: 0</label>
+          <label class="label">Cost: 100 points</label>
+          <button id="autoClickerButton" class="button">+1</button>
+        </div>
       </div>
-      <div class="footer">
-        Made w/ &lt;3 @ FastTrack'D
-      </div>
+      <div class="footer">Made w/ &lt;3 @ FastTrack'D</div>
     </div>
   </body>
 </html>
