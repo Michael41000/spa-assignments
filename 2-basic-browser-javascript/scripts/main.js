@@ -160,4 +160,8 @@ $("#document").ready(
                 setCookie("add", addNumber)
             }
         )
+
+        $(window).on('beforeunload', () => {
+            saveButton.click()
+        })
     })
